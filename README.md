@@ -49,7 +49,7 @@ step can be skipped by using the `install-bin` target.
 The ansible collection [znerol.podluck] includes the `podluck` units and
 provides modules and roles which simplify provisioning of `podman` pods.
 
-[znerol.podluck](https://galaxy.ansible.com/znerol/podluck)
+[znerol.podluck]: https://galaxy.ansible.com/znerol/podluck
 
 ## Documentation
 
@@ -157,10 +157,10 @@ systemd[676]: minimal.example.com@hello-world.service: Consumed 1.344s CPU time.
 The name `podluck` is derived from
 [Potluck]. The Potluck Dinner is a
 community event where guests bring a dish for the benefit of all. This is an apt
-methaphor for the microservice architecture where individual containers provide
+metaphor for the microservice architecture where individual containers provide
 services to form a useful application.
 
-[Potluck]([https://en.wikipedia.org/wiki/Potluck])
+[Potluck]: https://en.wikipedia.org/wiki/Potluck
 
 ## License
 
