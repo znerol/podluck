@@ -37,6 +37,8 @@ ExecStopPost=/usr/bin/podman container rm --ignore -f --cidfile %t/podluck/pod/%
 PIDFile=%t/podluck/pod/%p/%N.pid
 Type=forking
 
+Restart=on-failure
+
 [Install]
 WantedBy=multi-user.target default.target
 WantedBy=%p.target

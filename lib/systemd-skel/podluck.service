@@ -29,6 +29,8 @@ ExecStopPost=/usr/bin/podman pod rm --ignore -f --pod-id-file %t/podluck/pod/%p/
 PIDFile=%t/podluck/pod/%p/%N.pid
 Type=forking
 
+Restart=on-failure
+
 RuntimeDirectory=podluck/pod/%p
 ConfigurationDirectory=podluck/pod/%p
 
