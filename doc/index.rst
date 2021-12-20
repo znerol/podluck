@@ -5,8 +5,9 @@ Welcome to Podluck documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   intro
+   installation
    man
-
 
 
 Indices and tables
