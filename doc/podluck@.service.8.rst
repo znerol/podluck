@@ -52,30 +52,40 @@ Files (user scope)
 .. envfile:: ~/.config/podluck/default/systemd-container-env
 
    Optional systemd environment file shared by all containers in all pods.
+   Specify :envvar:`PODLUCK_CONTAINER_ARGS_DEFAULT` in this file.
 
 .. envfile:: ~/.config/podluck/pod/%p/systemd-container-env
 
-   Optional systemd per-pod container environment file.
+   Optional systemd per-pod container environment file. Specify
+   :envvar:`PODLUCK_CONTAINER_ARGS_POD` in this file.
 
 .. envfile:: ~/.config/podluck/pod/%p/systemd-container-%i-env
 
-   Optional systemd per-container environment file.
+   Optional systemd per-container environment file. Specify
+   :envvar:`PODLUCK_CONTAINER_IMAGE` (recommended) along with
+   :envvar:`PODLUCK_CONTAINER_IMAGE_CMD` (optional) and
+   :envvar:`PODLUCK_CONTAINER_ARGS` (optional) in this file.
 
 
-Files (user scope)
-------------------
+Files (system scope)
+--------------------
 
 .. envfile:: /etc/podluck/default/systemd-container-env
 
    Optional systemd environment file shared by all containers in all pods.
+   Specify :envvar:`PODLUCK_CONTAINER_ARGS_DEFAULT` in this file.
 
 .. envfile:: /etc/podluck/pod/%p/systemd-container-env
 
-   Optional systemd per-pod container environment file.
+   Optional systemd per-pod container environment file. Specify
+   :envvar:`PODLUCK_CONTAINER_ARGS_POD` in this file.
 
 .. envfile:: /etc/podluck/pod/%p/systemd-container-%i-env
 
-   Optional systemd per-container environment file.
+   Optional systemd per-container environment file. Specify
+   :envvar:`PODLUCK_CONTAINER_IMAGE` (recommended) along with
+   :envvar:`PODLUCK_CONTAINER_IMAGE_CMD` (optional) and
+   :envvar:`PODLUCK_CONTAINER_ARGS` (optional) in this file.
 
 
 See Also

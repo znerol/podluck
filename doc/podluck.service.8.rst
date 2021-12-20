@@ -40,11 +40,13 @@ Files (user scope)
 
 .. envfile:: ~/.config/podluck/default/systemd-pod-env
 
-   Optional environment file shared by all pods.
+   Optional environment file shared by all pods. Specify
+   :envvar:`PODLUCK_POD_ARGS_DEFAULT` in this file.
 
 .. envfile:: ~/.config/podluck/pod/%p/systemd-pod-env
 
-   Optional per-pod environment file.
+   Optional per-pod environment file. Specify :envvar:`PODLUCK_POD_ARGS` in this
+   file.
 
 
 Files (system scope)
@@ -52,11 +54,13 @@ Files (system scope)
 
 .. envfile:: /etc/podluck/default/systemd-pod-env
 
-   Optional environment file shared by all pods.
+   Optional environment file shared by all pods. Specify
+   :envvar:`PODLUCK_POD_ARGS_DEFAULT` in this file.
 
 .. envfile:: /etc/podluck/pod/%p/systemd-pod-env
 
-   Optional per-pod environment file.
+   Optional per-pod environment file. Specify :envvar:`PODLUCK_POD_ARGS` in this
+   file.
 
 
 See Also
