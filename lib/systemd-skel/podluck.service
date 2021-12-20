@@ -17,19 +17,19 @@ EnvironmentFile=-%E/podluck/pod/%p/systemd-pod-env
 
 TimeoutStopSec=180
 ExecStartPre=/bin/rm -f %t/podluck/pod/%p/%N.pid %t/podluck/pod/%p/%p.pod-id
-ExecStartPre=/usr/bin/podman pod create \
+ExecStartPre=/usr/bin/env podman pod create \
     $PODLUCK_POD_ARGS_DEFAULT \
     $PODLUCK_POD_ARGS \
     --infra-conmon-pidfile %t/podluck/pod/%p/%N.pid \
     --pod-id-file %t/podluck/pod/%p/%p.pod-id \
     --replace \
     --name %p
-ExecStart=/usr/bin/podman pod start --pod-id-file %t/podluck/pod/%p/%p.pod-id
-ExecStop=/usr/bin/podman pod stop \
+ExecStart=/usr/bin/env podman pod start --pod-id-file %t/podluck/pod/%p/%p.pod-id
+ExecStop=/usr/bin/env podman pod stop \
     --ignore \
     --time ${PODLUCK_POD_STOP_TIMEOUT} \
     --pod-id-file %t/podluck/pod/%p/%p.pod-id
-ExecStopPost=/usr/bin/podman pod rm \
+ExecStopPost=/usr/bin/env podman pod rm \
     --ignore \
     --force \
     --pod-id-file %t/podluck/pod/%p/%p.pod-id
