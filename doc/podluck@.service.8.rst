@@ -36,6 +36,15 @@ Environment
 
    Command passed to the container image. Empty by default.
 
+.. envvar:: PODLUCK_CONTAINER_STOP_TIMEOUT
+
+   Number of seconds to wait for a container to be stopped. Note, that this
+   value needs to be kept in sync with the ``TimeoutStopSec`` directive of the
+   respective systemd unit. It is recommended that ``TimeoutStopSec`` is
+   choosen by adding 60 to ``PODLUCK_POD_STOP_TIMEOUT``. Otherwise podman
+   management processes might get killed by systemd before there was a chance
+   to cleanup misbehaving containers. Defaults to 180 seconds.
+
 
 Files (user scope)
 ------------------
