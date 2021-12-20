@@ -20,10 +20,8 @@ EnvironmentFile=-%E/podluck/pod/%p/systemd-container-%i-env
 
 TimeoutStopSec=70
 ExecStartPre=/bin/rm -f %t/podluck/pod/%p/%N.pid %t/podluck/pod/%p/%N.ctr-id
-ExecStartPre=-/bin/touch -a %E/podluck/pod/%p/application-%i-env
 ExecStart=/usr/bin/podman container run \
     --cgroups=no-conmon \
-    --env-file=%E/podluck/pod/%p/application-%i-env \
     $PODLUCK_CONTAINER_ARGS_DEFAULT \
     $PODLUCK_CONTAINER_ARGS_POD \
     $PODLUCK_CONTAINER_ARGS \

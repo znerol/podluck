@@ -40,11 +40,6 @@ Environment
 Files (user scope)
 ------------------
 
-.. envfile:: ~/.config/podluck/pod/%p/application-%i-env
-
-   Required per-container application environment file. This path is passed to
-   ``--env-file`` argument of ``podman run``.
-
 .. envfile:: ~/.config/podluck/default/systemd-container-env
 
    Optional systemd environment file shared by all containers in all pods.
@@ -60,11 +55,6 @@ Files (user scope)
 
 Files (user scope)
 ------------------
-
-.. envfile:: /etc/podluck/pod/%p/application-%i-env
-
-   Required per-container application environment file. This path is passed to
-   ``--env-file`` argument of ``podman run``.
 
 .. envfile:: /etc/podluck/default/systemd-container-env
 
