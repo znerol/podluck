@@ -8,6 +8,7 @@ Welcome to Podluck documentation!
    intro
    installation
    examples
+   practice
    man
 
 
