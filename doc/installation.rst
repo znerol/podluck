@@ -4,8 +4,11 @@ Installation
 Dependencies
 ------------
 
-The ``podluck`` systemd units only depend on ``podman``. Familiarity with
+The ``podluck`` systemd units only depend on `podman`_. Familiarity with
 `podman docs`_ is a prerequisite.
+
+.. _`podman`: https://podman.io/
+
 
 
 Install
@@ -20,15 +23,14 @@ there.
     $ scp dist/podluck-dist.tar.gz me@example.com:~
     $ ssh me@example.com sudo tar -C /usr/local -xzf ~/podluck-dist.tar.gz
 
-Alternatively use the following ansible task to copy and unarchive a dist
-tarball into `/usr/local`.
-
-.. code-block:: yaml
-
-    - name: podluck present
-      unarchive:
-        src: files/podluck-dist.tar.gz
-        dest: /usr/local
-
 .. _releases: https://github.com/znerol/podluck/releases/
 .. _`podman docs`: https://docs.podman.io/
+
+
+Ansible collection
+------------------
+
+The ansible collection `znerol.podluck`_ includes the ``podluck`` units and
+provides modules and roles which simplify provisioning of ``podman`` pods.
+
+.. _`znerol.podluck`: https://galaxy.ansible.com/znerol/podluck
