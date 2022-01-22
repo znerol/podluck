@@ -32,7 +32,7 @@ Environment
    respective systemd unit. It is recommended that ``TimeoutStopSec`` is
    choosen by adding 60 to ``PODLUCK_POD_STOP_TIMEOUT``. Otherwise podman
    management processes might get killed by systemd before there was a chance
-   to cleanup misbehaving containers. Defaults to 180 seconds.
+   to cleanup misbehaving containers. Defaults to 240 seconds.
 
 
 Files (user scope)
