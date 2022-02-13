@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2022-02-13
+
+- BREAKING CHANGE: Remove podluck.target unit, simplify dependencies (#4)
+
 ## [1.0.1] - 2022-01-22
 
 ### Changed
@@ -16,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial import
 
-[Unreleased]: https://github.com/znerol/podluck/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/znerol/podluck/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/znerol/podluck/compare/v1.0.1...v2.0.0
 [1.0.1]: https://github.com/znerol/podluck/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/znerol/podluck/releases/tag/v1.0.0
