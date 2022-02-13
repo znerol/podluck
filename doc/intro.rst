@@ -18,8 +18,6 @@ A ``podluck`` pod consists of three systemd unit files:
 
 * One service unit file (``my-pod-name.service``) used to start and stop the
   entire pod. Copied from `podluck.service`_ unit file.
-* One target unit file (``my-pod-name.target``) used to synchronize pod and
-  container startup. Copied from `podluck.target`_ unit file.
 * One template service unit file (``my-pod-name@.service``) used to start and
   stop individual containers. Copied from `podluck@.service`_ unit file.
 
@@ -42,7 +40,6 @@ compatible with `podman-auto-update(1)`_ mechanism.
 .. _`systemd specifiers`: https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 .. _`systemd environment files`: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#EnvironmentFile=
 .. _`podluck.service`: https://github.com/znerol/podluck/blob/develop/lib/systemd-skel/podluck.service
-.. _`podluck.target`: https://github.com/znerol/podluck/blob/develop/lib/systemd-skel/podluck.target
 .. _`podluck@.service`: https://github.com/znerol/podluck/blob/develop/lib/systemd-skel/podluck@.service
 .. _`podman-pod-create(1)`: https://docs.podman.io/en/latest/markdown/podman-pod-create.1.html
 .. _`podman-run(1)`: https://docs.podman.io/en/latest/markdown/podman-run.1.html

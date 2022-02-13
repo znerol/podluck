@@ -31,15 +31,12 @@ Copy ``podluck`` units:
 
    $ cp /usr/local/lib/podluck/systemd-skel/podluck.service \
        ~/.config/systemd/user/minimal.example.com.service
-   $ cp /usr/local/lib/podluck/systemd-skel/podluck.target \
-       ~/.config/systemd/user/minimal.example.com.target
    $ cp /usr/local/lib/podluck/systemd-skel/podluck@.service \
        ~/.config/systemd/user/minimal.example.com@.service
 
 Note: ``minimal.example.com.service`` is used to manage the pod,
 ``minimal.example.com@.service`` is a service template for containers in
-that pod. The ``minimal.example.com.target`` unit is used to simplify
-dependencies between pod and container service units.
+that pod.
 
 Call ``systemctl --user daemon-reload`` to inform systemd about the
 added unit files.

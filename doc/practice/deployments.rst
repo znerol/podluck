@@ -21,7 +21,6 @@ units are deployed:
 
 * ``minimal.example.com.service`` (pod)
 * ``minimal.example.com@.service`` (containers)
-* ``minimal.example.com.target`` (dependencies)
 
 With only one container, the following services are started:
 
