@@ -7,4 +7,3 @@ Man Pages
 
    podluck.service.8
    podluck@.service.8
-   podluck.target.8

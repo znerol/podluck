@@ -147,7 +147,6 @@ latex_documents = [
 man_pages = [
     ('podluck.service.8', 'podluck.service', 'Podluck Documentation', [author], 8),
     ('podluck@.service.8', 'podluck@.service', 'Podluck Documentation', [author], 8),
-    ('podluck.target.8', 'podluck.target', 'Podluck Documentation', [author], 8),
 ]
 
 
